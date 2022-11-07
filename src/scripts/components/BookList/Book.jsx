@@ -1,13 +1,9 @@
 const Book = (props) => {
-  const { img, title, author, description } = props
+  const { img, title, author, description } = props;
 
-  const clickHandler = (title) => {
-    console.log(title)
-  }
+  const clickHandler = (title) => {};
 
-  const hoverHandler = (title) => {
-    console.log(title)
-  }
+  const hoverHandler = (title) => {};
 
   return (
     <>
@@ -27,7 +23,7 @@ const Book = (props) => {
         </button>
       </article>
     </>
-  )
-}
+  );
+};
 
-export default Book
+export default Book;

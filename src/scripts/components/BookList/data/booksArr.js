@@ -24,6 +24,6 @@ const booksArr = [
             'Lorem, ipsum dolor sit amet consectetur adipisicing elit.Aliasvel veritatis eos eligendi vitae ad',
         id: uuidv4(),
     },
-]
+];
 
-export default booksArr
+export default booksArr;

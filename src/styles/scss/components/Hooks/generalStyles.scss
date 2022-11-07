@@ -1,0 +1,47 @@
+$clr-blue: #6127d4;
+$clr-primary-1: hsl(248, 58%, 63%);
+$clr-primary-5: hsl(67, 64%, 45%);
+
+$fixed-width: 450px;
+$radius: 0.25rem;
+$spacing: 0.1rem;
+$transition: all 0.3s linear;
+
+.item {
+  border: 1.5px solid white;
+  display: flex;
+  justify-content: space-between;
+  max-width: $fixed-width;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  align-items: center;
+  border-radius: $radius;
+  background: $clr-blue;
+
+  h4 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  button {
+    border: 1px solid #ffffff;
+    border-radius: 7px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: $spacing;
+    color: $clr-primary-5;
+    background: transparent;
+    &:hover {
+      cursor: pointer;
+      color: #000000;
+      background-color: greenyellow;
+    }
+  }
+  a {
+    // none
+  }
+}

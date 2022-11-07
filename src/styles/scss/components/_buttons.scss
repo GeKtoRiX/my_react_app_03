@@ -1,26 +1,38 @@
-@use "../custom" as *;
-@use "./mixins" as *;
+@use '../custom' as *;
+@use './mixins' as *;
+
+$clr-white: #ffffff;
+$clr-primary-1: hsl(248, 58%, 63%);
+$clr-primary-5: hsl(205, 78%, 60%);
+
+$radius: 0.25rem;
+$spacing: 0.1rem;
+$transition: all 0.3s linear;
+
 // Шаблонные свойства контейнера с кнопками.
 .buttons-std {
-    // border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-// Шаблонные свойства кнопок в коннейнерах.
+// Шаблонные свойства кнопок в контейнерах.
 .button-std {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 1rem;
-    min-height: auto;
-    border-radius: 3px;
-    border: hidden;
-    margin: 1rem;
-    padding: 0.2rem;
-    font-size: 1.5rem;
-    &:hover {
-        cursor: pointer;
-        background-color: beige;
-    }
+  display: inline-block;
+  margin: 1rem 0.75rem 1rem 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: $radius;
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  letter-spacing: $spacing;
+  color: $clr-white;
+  cursor: pointer;
+  background: $clr-primary-5;
+  transition: transition;
+
+  &:hover {
+    color: $clr-white;
+    background: $clr-primary-1;
+  }
 }

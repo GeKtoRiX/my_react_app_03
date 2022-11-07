@@ -1,12 +1,12 @@
-import { Outlet } from 'react-router'
-import NavBar from './components/BookList/NavBar'
+import { Outlet } from 'react-router';
+import NavBar from './NavBar';
 const MainLayout = () => {
   return (
     <>
       <NavBar />
       <Outlet />
     </>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;
