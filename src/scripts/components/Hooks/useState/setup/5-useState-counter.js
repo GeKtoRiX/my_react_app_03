@@ -5,6 +5,13 @@ const UseStateCounter = () => {
   const resetNum = () => {
     setValue(0);
   };
+  // Использование предыдущего значения value при ре-рендеринге.
+  const complexIncrease = () => {
+    setTimeout(() => {
+      // value + 1
+      setValue((prevState) => prevState + 1);
+    }, 3000);
+  };
   return (
     <>
       <section>
@@ -30,6 +37,13 @@ const UseStateCounter = () => {
           }}
         >
           increase
+        </button>
+      </section>
+      <section>
+        <h2>more complex counter</h2>
+        <h1>{value}</h1>
+        <button className='button-std' type='button' onClick={complexIncrease}>
+          increase later
         </button>
       </section>
     </>

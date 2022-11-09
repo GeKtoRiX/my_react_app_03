@@ -3,8 +3,10 @@ import { Route, Routes } from 'react-router-dom';
 // =======[REACT_ROUTES_COMPONENTS]=======
 import MainLayout from './MainLayout';
 import { Home } from './components/BookList/Home';
-// import BookList from './components/BookList/BookList'
+import BookList from './components/BookList/BookList'
 import UseState from './components/Hooks/useState/UseState';
+import UseEffect from './components/Hooks/useEffect/UseEffect';
+import BirthdayReminder from './components/miniProjects/birthdayReminder/BirtdayReminder';
 import { About } from './components/BookList/About';
 // =======[_________END__________]=======
 // Стили рендеринга главного компонента сайта.
@@ -24,8 +26,10 @@ function App() {
       <Routes>
         <Route path='/' element={<MainLayout />}>
           <Route index path='Home' element={<Home />}></Route>
-          {/* <Route index path='Books' element={<BookList />}/> */}
-          <Route index path='useState' element={<UseState />} />
+          <Route index path='Books' element={<BookList />}/>
+          <Route index path='UseState' element={<UseState />} />
+          <Route index path='UseEffect' element={<UseEffect />} />
+          <Route index path='BirthdayReminder' element={<BirthdayReminder />} />
           <Route index path='About' element={<About />}></Route>
         </Route>
       </Routes>
